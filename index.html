@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Click the target!</h1>
+    <p>Score: <span id="score">0</span></p>
+    <button onclick="scoreUp()">🎯 Click me</button>
+
+    <script>
+      let score = 0;
+
+      function scoreUp() {
+        score++;
+        document.getElementById("score").textContent = score;
+      }
+    </script>
+  </body>
+</html>
